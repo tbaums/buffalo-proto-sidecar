@@ -17,6 +17,9 @@ build1:
  stage: build
  script:
    - echo "Do your build here"
+   - docker login --username=$DOCKERHUB_USER --password=$DOCKERHUB_PASSWORD
+   - docker build . -t $DOCKERHUB_USER/demo-website
+   - docker push $DOCKERHUB_USER/demo-website
    
 test1:
  stage: test

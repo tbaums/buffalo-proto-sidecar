@@ -14,7 +14,7 @@ app = Flask(__name__)
 @app.route('/where')
 def where():
     hostname = socket.gethostname()
-    return f'Website running at host {hostname}\n'
+    return f'\n Version 0.1 \n Website running at host {hostname}\n'
 
 @app.route('/health')
 def health():
