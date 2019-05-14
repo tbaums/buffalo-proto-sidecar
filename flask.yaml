@@ -27,7 +27,7 @@ spec:
         app: flask
     spec:
       containers:
-      - image: tbaums/demo-website
+      - image: tbaums/demo-website:$GIT_COMMIT
         imagePullPolicy: Always
         name: demo-website
         resources: {}
