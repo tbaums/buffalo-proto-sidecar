@@ -26,10 +26,8 @@ spec:
       labels:
         app: flask
     spec:
-      imagePullSecrets:
-      - name: pullsecret
       containers:
-      - image: gitlab-registry.marathon.l4lb.thisdcos.directory:50000/root/buffalo-proto-sidecar/image:latest
+      - image: tbaums/demo-website
         imagePullPolicy: Always
         name: demo-website
         resources: {}
